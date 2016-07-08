@@ -1,0 +1,226 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Clearfix: contain floats */
+.group:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.alignright {
+    float: right;
+    padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+    float: left;
+    padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    line-height: 1.4;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+.container{
+}
+header{
+    height: 50px;
+    background-color: #0A2348;
+    padding-top: 5px;
+}
+
+.logo{
+    position: absolute;
+    top: 14px;
+    margin-left: 100px;
+    background-color: #627898;
+    font-weight: 800;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 8px double;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: #000 0 0 40px; 
+}
+.logo:hover{
+  background-color: rgb(131, 151, 175);
+}
+a{
+  text-decoration: none;
+}
+
+.input-form{
+    margin-top: 5px;    
+    margin-right: 100px;
+    float: right
+}
+.user-input {
+  color: #6b6b6c;
+  font-size: 1em;
+  background: #f1f1f1;
+  border: 1px solid #111;
+  display: inline-block;
+  width: 130px;
+  font-family: helvetica, arial, sans-serif;
+  height: 30px;
+  line-height: 1.1em;
+  text-align: center;
+  margin-right: 15px;
+
+}
+textarea:focus, input[type="text"]:focus, select:focus {
+    background: white;
+    border: 1px solid #99E2FF;
+    outline: none;
+    box-shadow: 0 0 6px #99E2FF;
+}
+.submit-btn {
+  background: #ffe500;
+  color: #000;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #111;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 25px;
+  vertical-align: middle;
+  font-family: helvetica, arial, sans-serif;
+  cursor: pointer;  
+}
+.submit-btn:hover {
+  background: #fff600;
+}
+.main-block {
+    height:850px;
+    padding-top: 80px;
+    box-shadow: #000 0 0 50px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    background-image: url("../images/back-image-blue.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content{
+  width: 70%;
+  margin: 0 auto;
+  margin-top:40px;
+  margin-bottom: 80px;
+}
+.blurb{
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border: 1px solid #959595;
+  box-shadow: #000 0 0 50px;
+  border-top-width: 0;
+  padding: 25px 25px 26px;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  float: left;
+}
+.create-btn{
+    height: 100px;
+    box-shadow: #000 0 0 20px;
+    border-radius: 9px;
+    float: right;
+    width: 30%;
+    margin:0 auto;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #010D20;
+    height: 140px;
+    width: 100%;
+}
+
+.social{
+  width: 10%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+}
+.twitter{
+    float:left;
+}
+.facebook{
+    float:right;
+}
+nav{
+    display: inline-block;
+    padding: 0px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background: rgba(255,255,255,.76);
+    border: 2px solid;
+    box-shadow: #000 0 0 20px;
+    margin-bottom: 50px;
+    margin: 0 auto; 
+    height: 30px;
+}
+nav a{
+  padding: 0px 12px;
+  text-decoration: none;
+  color: #010D20;
+}
+nav a:hover{
+  background-color: #ffffff;
+}
+
+.copyright{
+    margin-top: 10px;
+    padding-top: 0px;
+    font-size: 12px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+

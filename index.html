@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Made By Rory Cousland - Final Project - Simply.apply - Information entering">
+        <meta name="keywords" content="Simple, apply, information entering, free">
+
+        <title>Simple.apply - rory.digital</title>
+
+        <!-- external CSS link -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/create.css">
+    </head>
+    <body>
+        <header class="container header-block">
+            
+            <a href="index.html" class="logo">Simple.Apply</a>
+        </header>
+
+        <section class="container main-block">
+            <form method="post">
+
+              <fieldset>
+                <legend>Create Your username &amp; Password</legend>
+
+                <div class="center">
+                  <div class="name-fields center">
+                    <input type="text" name="user-name[first]" placeholder="Username" id="user-name" autofocus>
+                    <input type="text" name="password[last]" placeholder="password" id="password">
+                  </div>
+                </div>
+            </fieldset>
+
+              <fieldset>
+                <legend>Your Contact Info</legend>
+
+                <div class="form-row">
+                  <label for="name">Your Name</label>
+                  <div class="name-fields">
+                    <input type="text" name="name[first]" placeholder="First" id="firstname" autofocus>
+                    <input type="text" name="name[middle]" placeholder="Middle" id="middlename">
+                    <input type="text" name="name[last]" placeholder="Last" id="lastname">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <label for="phone">Phone Number</label>
+                  <div class="phone-number-fields">
+                    <input type="text" name="phone" class="phone" placeholder="+613" maxlength="15" id="phone">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <label for="address">Address</label>
+                  <div class="address-fields">
+                    <input type="text" name="address[street_address]" placeholder="Street Address" class="address-street-address" id="address">
+                    <input type="text" name="address[line_2]" placeholder="Address Line 2" class="address_line_2" id="address_line_2">
+                    <input type="text" name="address[city]" placeholder="City" class="address-city" id="city">
+                    <input type="text" name="address[state]" placeholder="State" class="address-state" maxlength="3" id="state">
+                    <input type="text" name="address[postal_code]" placeholder="Postal Code" class="address-postal-code" maxlength="4" id="post_code">
+                    <select class="country" id="country">
+                        <option value="nation" disabled selected>Select your Country</option>
+                        <option>Australia</option>
+                        <option>Canada</option>
+                        <option>New Zealand</option>
+                        <option>U.K</option>
+                        <option>U.S.A</option>
+                  </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <button id="submit-btn" class="submit-info center">Submit</button>
+              </fieldset>
+
+            </form>
+        </section>
+        
+
+        <footer class="">
+            <div class="logo-footer">
+
+            </div>
+            <div class="social">
+                <a class="twitter" href="https://twitter.com">
+                    <img src="images/twitter.png" style="width:43px;height:33px;">
+                </a>
+                <a class="facebook" href="https://facebook.com">
+                 <img src="images/facebook.png" style="width:17px;height:37px;">
+                </a>
+            </div>
+            <nav>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact Us</a>
+
+            </nav>
+            <p class="copyright">Copyleft - rory.digital</p>
+
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/create.js"></script>
+    </body>
+</html>
